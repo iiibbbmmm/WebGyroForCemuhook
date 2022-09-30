@@ -403,11 +403,7 @@ async function main() {
       phoneIsConnected = true;
       ws.on("report", function(msg) {
         var data = JSON.parse(msg)
-        Report((data.ts * 1000).toString(16), {
-          x: 0,
-          y: 0,
-          z: 0
-        }, data.gyro);
+        Report((data.ts * 1000).toString(16), data.acceleration, data.gyro);
       });
       // ws.on("error", () => {
       //   phoneIsConnected = false;
