@@ -1,3 +1,6 @@
+# Fork
+Adding acceleration and android support for the original project.
+
 # WebGyroForCemuhook
 
 Use web ondevicemotion event data provided to cemuhook.
